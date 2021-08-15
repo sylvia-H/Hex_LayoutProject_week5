@@ -1,0 +1,93 @@
+// fonts 文字管理
+$fz-root: 1px;
+$fw-code:"n","l","b","bk";
+$font-weight-base:(
+    "n":normal,
+    "l":lighter,
+    "b":bold,
+    "bk":bolder,
+);
+
+$text-align:"l","c","r";
+$text-align-base:(
+    "l":left,
+    "c":center,
+    "r":right
+);
+
+
+// 色碼管理
+$basic-color:"000","fff","f00","0f0","00f";
+$gray-color:"333","666","999","aaa","bbb","ccc","ddd","eee";
+
+$main-red:#AA0601;
+$sub-red:#650300;
+$tag-red:#9F1213;
+
+$main-gray:#555555;
+$sub-gray:#6C6C6C;
+$select-gray:#495057;
+
+$main-black:#000;
+$para-black:#0A0A0A;
+$card-black:#212529;
+
+// spacing 管理
+$spacer: 2px;
+$rwd-reakpoints:"xl","lg","md","sm","xs";
+$rwd-reakpoint-base:(
+    "xl":1200px,
+    "lg":992px,
+    "md":768px,
+    "sm":576px,
+    "xs":0
+);
+$margin-direction:"t","r","b","l";
+$margin-direction-base:(
+    "t":"top",
+    "r":"right",
+    "b":"bottom",
+    "l":"left"
+);
+$padding-direction:"t","r","b","l";
+$padding-direction-base:(
+    "t":"top",
+    "r":"right",
+    "b":"bottom",
+    "l":"left"
+);
+
+// display
+$display: none,block,inline-block,flex,inline-flex,table;
+
+// position
+$position: "s","a","r","f";
+$position-base:(
+    "s":static,
+    "a":absolute,
+    "r":relative,
+    "f":fixed
+);
+
+
+// flex 管理
+$flex-direction: row,column,row-reverse,column-reverse;
+
+$flex-wrap:"w","nw","wr";
+$flex-wrap-base:(
+    "w":wrap,
+    "nw":nowrap,
+    "wr":wrap-reverse
+);
+
+$justify-content:"fs","fe","c","sb","sa","se","stretch","baseline";
+$justify-content-base:(
+    "fs":flex-start,
+    "fe":flex-end,
+    "c":center,
+    "sb":space-between,
+    "sa":space-around,
+    "se":space-evenly,
+    "stretch":stretch,
+    "baseline":baseline
+);

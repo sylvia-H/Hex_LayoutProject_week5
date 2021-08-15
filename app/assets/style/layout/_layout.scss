@@ -1,0 +1,15 @@
+nav{
+    width: 296px;
+    min-height: 100vh;
+    height: 500px;
+    position: fixed;
+}
+
+.nav-link.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+}

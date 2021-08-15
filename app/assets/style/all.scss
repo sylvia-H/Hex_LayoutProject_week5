@@ -1,6 +1,15 @@
+/* Base */
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
+@import "./helpers/variables_BS5";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+/* Utils */
+@import "./utils/variable";
+@import "./utils/spacing";
 
-@import './layout/index.scss'
+/* Layout */
+@import './layout/layout';
+
+
+/* Page */
+@import './page/index.scss';
