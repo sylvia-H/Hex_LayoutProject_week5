@@ -2,10 +2,17 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables_BS5";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./base/base";
 
 /* Utils */
 @import "./utils/variable";
 @import "./utils/spacing";
+@import "./utils/fonts";
+@import "./utils/img";
+
+/* Components */
+@import "./components/avatar";
+@import "./components/collapse";
 
 /* Layout */
 @import './layout/layout';

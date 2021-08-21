@@ -1,0 +1,13 @@
+.expand_more {
+    display: none;
+  }
+.expand_less {
+    display: inline-block;
+}
+.collapsed .expand_more {
+    display: inline-block;
+}
+
+.collapsed .expand_less {
+    display: none;
+}
