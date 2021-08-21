@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANSWER - Assignment</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="d-flex">
+    <nav class="navbar d-flex flex-column justify-content-start align-items-start bg-light">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/images/logo-ANSWER.svg" alt="ANSWER" width="151" height="40">
+      </a>
+      <ul class="navbar-nav pt-32">
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center" href="./index.html">
+            <span class="material-icons pr-16">
+              assessment
+            </span>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center" href="./index.html">
+            <span class="material-icons pr-16">
+              question_answer
+            </span>
+            Question
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center link-success active" aria-current="page" href="./assignment.html">
+            <span class="material-icons pr-16">
+              assignment
+            </span>
+            Assignment
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center" href="./index.html">
+            <span class="material-icons pr-16">
+              video_library
+            </span>
+            Course
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center" href="./admin.html">
+            <span class="material-icons pr-16">
+              supervisor_account
+            </span>
+            Admin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-start align-items-center" href="./index.html">
+            <span class="material-icons pr-16">
+              settings
+            </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container-fluid">
+      
+<!-- 上方標題列 -->
+<header class="d-flex align-items-center justify-content-between pt-32 pb-32 pl-20 pr-20">
+  <div class="d-flex align-items-center">
+    <h1 class="fs-4 fw-bold">Assignment</h1>
+    <!-- All Courses dropdown -->
+    <div class="nav-item dropdown ml-48">
+        <span class="fs-6 fw-bold d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+            All Courses
+            <span class="material-icons-outlined text-success ml-8">
+              expand_more
+            </span>
+        </span>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="d-flex align-items-center">
+    <!-- trigger Search modal -->
+    <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <span class="material-icons-outlined">
+        search
+      </span>
+    </a>
+    <a href="#" class="text-dark ml-26">
+      <span class="material-icons-outlined">
+        notifications_active
+      </span>
+    </a>
+  </div>
+</header>
+
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Find Something..." aria-label="searchContent" aria-describedby="basic-addon1">
+          <span class="input-group-text material-icons-outlined">
+            search
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 下方內容區 -->
+<div class="container pl-20 pr-20 pb-32">
+  <div class="row">
+    <!-- 左側 Assignment List -->
+    <div class="col-4">
+      <p class="fs-6 fw-bold d-flex align-items-center mb-6" data-bs-toggle="dropdown" aria-expanded="false">
+        All (<span id="assignmentListChild"></span>)
+        <span class="material-icons-outlined text-success ml-8">
+          expand_more
+        </span>
+      </p>
+      <div id="assignmentList" class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <p class="fs-7 d-flex justify-content-between mb-4">
+            Chapter Assignment 2
+            <span>4 hrs ago</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            Please check this file…
+            <span class="fs-7 text-secondary">Emily Wang</span>
+          </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p class="fs-7 d-flex justify-content-between mb-4">
+            Chapter Assignment 1
+            <span>12 hrs ago</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            My Homework
+            <span class="fs-7 text-secondary">David Xu</span>
+          </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p class="fs-7 d-flex justify-content-between mb-4">
+            Final Assignment
+            <span>18 hrs ago</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            Have a problem with this…
+            <span class="fs-7 text-secondary">Tony Wei</span>
+          </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p class="fs-7 d-flex justify-content-between mb-4">
+            Final Assignment
+            <span>19 hrs ago</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            Did I do it right?
+            <span class="fs-7 text-secondary">Christina Lin</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 右側 Assignment 回覆區 -->
+    <div class="col-8">
+      <p class="fs-7 lh-24 text-secondary text-end mb-6">
+        <span id="assignmentCommentNum"></span> comments
+      </p>
+      <!-- Assignment 回覆區面板 -->
+      <div class="card mb-16">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div>
+            <p class="fs-7 mb-4">Chapter Assignment 2 / HTML&CSS</p>
+            <p>Please check this file for me, thanks!</p>
+          </div>
+          <!-- More dropdown -->
+          <div class="dropdown">
+            <span class="material-icons-outlined" data-bs-toggle="dropdown" aria-expanded="false">
+              more_vert
+            </span>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Edit</a></li>
+              <li><a class="dropdown-item" href="#">Delete</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cancel</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul id="assignmentComment">
+            <li class="d-flex mb-16">
+              <div class="avatar">
+                <img src="./assets/images/emilywang.jpeg" alt="Emily Wang">
+              </div>
+              <div class="ml-8 pb-16 border-bottom border-gray-400">
+                <p>Emily Wang</p>
+                <span class="text-secondary fs-7 lh-24">10:38 AM (4 hours ago)</span>
+                <p class="my-4">
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="bg-light px-1 rounded-1">div</code> is bigger than the height of the <code class="bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                  <br>
+                  What is the gap or extra space below image?
+                </p>
+                <button type="button" class="btn bg-light btn-outline-gray-400 rounded-1">
+                  <a href="#" download="HW-2-David.zip" class="fw-bold d-flex align-items-center">
+                    <span class="material-icons-outlined mr-8">
+                      attach_file
+                    </span>
+                    HW-2-David.zip
+                  </a>
+                </button>
+              </div>
+            </li>
+            <li class="d-flex">
+              <div class="avatar">
+                <img src="./assets/images/andychen.jpeg" alt="Andy Chen">
+              </div>
+              <div class="ml-8 pb-16">
+                <p>Andy Chen (You)</p>
+                <span class="text-secondary fs-7 lh-24">13:24 AM (1 hours ago)</span>
+                <p class="my-4">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                </p>
+                <p class="mb-16">You can:</p>
+                <p>
+                  • adjust the <code class="bg-light px-1 rounded-1">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="bg-light px-1 rounded-1">middle</code> ) or
+                  <br>
+                  • change the <code class="bg-light px-1 rounded-1">display</code> so it isn’t inline.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 分頁導覽列 -->
+      <div class="d-flex justify-content-between">
+        <ul class="pagination">
+            <li class="page-item">
+            <a class="page-link border-0" href="#" aria-label="Previous">
+                <span class="material-icons-outlined" aria-hidden="true">chevron_left</span>
+            </a>
+            </li>
+            <li class="page-item">
+            <a class="page-link border-0" href="#" aria-label="Next">
+                <span class="material-icons-outlined" aria-hidden="true">chevron_right</span>
+            </a>
+            </li>
+        </ul>
+        <!-- Mark 按鈕 & Reply 按鈕 -->
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-success py-2 px-4 me-3">Mark as read</button>
+            <!-- trigger Editor modal -->
+            <button type="button" class="btn btn-success py-2 px-4" data-bs-toggle="modal" data-bs-target="#editorModal">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Edit Admin Modal -->
+<div class="modal fade" id="editorModal" tabindex="-1" aria-labelledby="editorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+            </div>
+            <div class="modal-body">
+                <div id="editor"></div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success py-2 px-4 me-3" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                <!-- trigger Editor modal -->
+                <button type="button" class="btn btn-success py-2 px-4" data-bs-dismiss="modal" aria-label="Close">Reply</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

@@ -1,1 +1,0 @@
-{"version":3,"sources":["page/index.scss","page/index.css"],"names":[],"mappings":"AAAA;EACI,aAAa;ACCjB","file":"index.css","sourcesContent":["header{\r\n    padding: 2rem;\r\n}","header {\n  padding: 2rem;\n}\n"]}
